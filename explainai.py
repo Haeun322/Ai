@@ -117,7 +117,7 @@ description = input('어떤 사물에 대해서 알고 싶으세요? ')
 
 # 구글 이미지 검색을 이용해 이미지 URL 가져오기
 from google_images_search import GoogleImagesSearch
-gis = GoogleImagesSearch('AIzaSyBa83KkH8hTv6mqlazkIiDIQVnK4X7Cl5I', 'e6625ab35d99b4405')
+gis = GoogleImagesSearch('API key', 'CSE ID')
 gis.search({'q': description})
 for image in gis.results():
     print(image.url)
